@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atomic Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="    https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_fYXLO9TyttovpK9mhcO-w7P5X3k2cfKFCEMACpe5fw&s=10
+">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="upper">
+        <a href="#home" class="logo">Atomic<span>Restaurant</span></a>
+
+        <nav class="up">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#foods">Foods</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#drinks">Drinks</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="btns">
+            <div class="cart">
+                <button class="cart-button" id="cart-button">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </button>
+
+                <div class="cart-panel" id="cart-panel">
+                    <h3>Your Cart</h3>
+                    <div class="cart-items" id="cart-items">
+                        <p class="empty-cart">Your cart is empty</p>
+                    </div>
+                    <div class="cart-bottom">
+                        <strong>Total: <span id="cart-total">$0.00</span></strong>
+                        <button id="clear-cart">Clear Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#booking" class="user-icon">
+                <i class="fa-solid fa-user"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <span class="small-title">WELCOME TO ATOMIC</span>
+                <h1>Enjoy Delicious Food <span>Every Day</span></h1>
+                <p>Discover fresh ingredients, amazing flavors and unforgettable meals prepared with passion.</p>
+
+                <div class="hero-buttons">
+                    <a href="#foods" class="main-btn">Explore Menu</a>
+                    <a href="#booking" class="second-btn">Book a Table</a>
+                </div>
+
+                <div class="hero-info">
+                    <div><strong>20+</strong><span>Main Dishes</span></div>
+                    <div><strong>4.9</strong><span>Customer Rating</span></div>
+                    <div><strong>100%</strong><span>Fresh Food</span></div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=900" alt="Fresh restaurant food">
+                <div class="hero-price">
+                    <span>Special Dish</span>
+                    <strong>Only $12.99</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <i class="fa-solid fa-utensils"></i>
+                <h3>Quality Food</h3>
+                <p>Fresh ingredients every day.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Fast Delivery</h3>
+                <p>Your food arrives fresh.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-star"></i>
+                <h3>Best Taste</h3>
+                <p>Made by experienced chefs.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-heart"></i>
+                <h3>Made With Love</h3>
+                <p>Every meal made with care.</p>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=900" alt="Restaurant interior">
+            </div>
+
+            <div class="about-text">
+                <span class="small-title">ABOUT OUR RESTAURANT</span>
+                <h2>Good Food Creates <span>Great Memories</span></h2>
+                <p>Atomic Restaurant brings people together through delicious food and a welcoming atmosphere. Our team focuses on quality, freshness and excellent service.</p>
+
+                <ul class="about-list">
+                    <li><i class="fa-solid fa-check"></i> Fresh ingredients</li>
+                    <li><i class="fa-solid fa-check"></i> Professional chefs</li>
+                    <li><i class="fa-solid fa-check"></i> Comfortable atmosphere</li>
+                </ul>
+
+                <a href="#booking" class="main-btn">Visit Us</a>
+            </div>
+        </section>
+
+        <section class="foods-section" id="foods">
+            <div class="section-title">
+                <span class="small-title">OUR MENU</span>
+                <h2>Popular <span>Main Dishes</span></h2>
+                <p>Choose your favorite meal from our menu.</p>
+            </div>
+
+            <div class="food-grid">
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600" alt="Classic Burger">
+                    <div class="food-info">
+                        <span class="food-type">Burger</span>
+                        <h3>Classic Burger</h3>
+                        <p>Beef, cheese, lettuce and fresh sauce.</p>
+                        <div class="food-bottom"><strong>$8.99</strong><button class="add-cart" data-name="Classic Burger" data-price="8.99">Add to Cart</button></div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?w=600" alt="Pepperoni Pizza">
+                    <div class="food-info">
+                        <span class="food-type">Pizza</span>
+                        <h3>Pepperoni Pizza</h3>
+                        <p>Cheese, tomato sauce and pepperoni.</p>
+                        <div class="food-bottom"><strong>$11.99</strong><button class="add-cart" data-name="Pepperoni Pizza" data-price="11.99">Add to Cart</button></div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600" alt="Fresh Salad">
+                    <div class="food-info">
+                        <span class="food-type">Salad</span>
+                        <h3>Fresh Garden Salad</h3>
+                        <p>Fresh vegetables and special dressing.</p>
+                        <div class="food-bottom"><strong>$6.50</strong><button class="add-cart" data-name="Fresh Garden Salad" data-price="6.50">Add to Cart</button></div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600" alt="Grilled Chicken">
+                    <div class="food-info">
+                        <span class="food-type">Chicken</span>
+                        <h3>Grilled Chicken</h3>
+                        <p>Juicy chicken with herbs and spices.</p>
+                        <div class="food-bottom"><strong>$10.50</strong><button class="add-cart" data-name="Grilled Chicken" data-price="10.50">Add to Cart</button></div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=600" alt="Pasta">
+                    <div class="food-info">
+                        <span class="food-type">Pasta</span>
+                        <h3>Creamy Pasta</h3>
+                        <p>Pasta with creamy cheese sauce.</p>
+                        <div class="food-bottom"><strong>$9.25</strong><button class="add-cart" data-name="Creamy Pasta" data-price="9.25">Add to Cart</button></div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600" alt="BBQ Ribs">
+                    <div class="food-info">
+                        <span class="food-type">BBQ</span>
+                        <h3>BBQ Ribs</h3>
+                        <p>Tender ribs with barbecue sauce.</p>
+                        <div class="food-bottom"><strong>$14.99</strong><button class="add-cart" data-name="BBQ Ribs" data-price="14.99">Add to Cart</button></div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600" alt="Margherita Pizza">
+                    <div class="food-info">
+                        <span class="food-type">Pizza</span>
+                        <h3>Margherita Pizza</h3>
+                        <p>Mozzarella, tomato and fresh basil.</p>
+                        <div class="food-bottom"><strong>$10.25</strong><button class="add-cart" data-name="Margherita Pizza" data-price="10.25">Add to Cart</button></div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600" alt="Ramen">
+                    <div class="food-info">
+                        <span class="food-type">Asian</span>
+                        <h3>Chicken Ramen</h3>
+                        <p>Warm noodles with chicken and broth.</p>
+                        <div class="food-bottom"><strong>$9.75</strong><button class="add-cart" data-name="Chicken Ramen" data-price="9.75">Add to Cart</button></div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=600" alt="Cheese Burger">
+                    <div class="food-info">
+                        <span class="food-type">Burger</span>
+                        <h3>Cheese Burger</h3>
+                        <p>Double cheese with a juicy beef patty.</p>
+                        <div class="food-bottom"><strong>$9.50</strong><button class="add-cart" data-name="Cheese Burger" data-price="9.50">Add to Cart</button></div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600" alt="Vegetable Pizza">
+                    <div class="food-info">
+                        <span class="food-type">Pizza</span>
+                        <h3>Vegetable Pizza</h3>
+                        <p>Fresh vegetables and mozzarella.</p>
+                        <div class="food-bottom"><strong>$10.99</strong><button class="add-cart" data-name="Vegetable Pizza" data-price="10.99">Add to Cart</button></div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600" alt="Caesar Salad">
+                    <div class="food-info">
+                        <span class="food-type">Salad</span>
+                        <h3>Caesar Salad</h3>
+                        <p>Crisp lettuce, cheese and dressing.</p>
+                        <div class="food-bottom"><strong>$7.50</strong><button class="add-cart" data-name="Caesar Salad" data-price="7.50">Add to Cart</button></div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=600" alt="Steak">
+                    <div class="food-info">
+                        <span class="food-type">Steak</span>
+                        <h3>Grilled Steak</h3>
+                        <p>Grilled beef served with vegetables.</p>
+                        <div class="food-bottom"><strong>$16.99</strong><button class="add-cart" data-name="Grilled Steak" data-price="16.99">Add to Cart</button></div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=600" alt="Italian Pasta">
+                    <div class="food-info">
+                        <span class="food-type">Pasta</span>
+                        <h3>Italian Pasta</h3>
+                        <p>Classic pasta with tomato and herbs.</p>
+                        <div class="food-bottom"><strong>$8.75</strong><button class="add-cart" data-name="Italian Pasta" data-price="8.75">Add to Cart</button></div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1562967914-608f82629710?w=600" alt="Chicken Wings">
+                    <div class="food-info">
+                        <span class="food-type">Chicken</span>
+                        <h3>Chicken Wings</h3>
+                        <p>Crispy wings with a special sauce.</p>
+                        <div class="food-bottom"><strong>$8.25</strong><button class="add-cart" data-name="Chicken Wings" data-price="8.25">Add to Cart</button></div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=600" alt="Fish and Chips">
+                    <div class="food-info">
+                        <span class="food-type">Seafood</span>
+                        <h3>Fish and Chips</h3>
+                        <p>Fried fish with golden crispy potatoes.</p>
+                        <div class="food-bottom"><strong>$12.50</strong><button class="add-cart" data-name="Fish and Chips" data-price="12.50">Add to Cart</button></div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600" alt="Avocado Bowl">
+                    <div class="food-info">
+                        <span class="food-type">Healthy</span>
+                        <h3>Avocado Bowl</h3>
+                        <p>Avocado, greens and fresh vegetables.</p>
+                        <div class="food-bottom"><strong>$8.99</strong><button class="add-cart" data-name="Avocado Bowl" data-price="8.99">Add to Cart</button></div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=600" alt="Beef Steak">
+                    <div class="food-info">
+                        <span class="food-type">Steak</span>
+                        <h3>Beef Steak</h3>
+                        <p>Classic beef steak with side vegetables.</p>
+                        <div class="food-bottom"><strong>$17.50</strong><button class="add-cart" data-name="Beef Steak" data-price="17.50">Add to Cart</button></div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600" alt="Chicken Plate">
+                    <div class="food-info">
+                        <span class="food-type">Chicken</span>
+                        <h3>Chicken Plate</h3>
+                        <p>Grilled chicken with a fresh side salad.</p>
+                        <div class="food-bottom"><strong>$11.25</strong><button class="add-cart" data-name="Chicken Plate" data-price="11.25">Add to Cart</button></div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=600" alt="Cheese Pasta">
+                    <div class="food-info">
+                        <span class="food-type">Pasta</span>
+                        <h3>Cheese Pasta</h3>
+                        <p>Rich cheese sauce with Italian pasta.</p>
+                        <div class="food-bottom"><strong>$9.99</strong><button class="add-cart" data-name="Cheese Pasta" data-price="9.99">Add to Cart</button></div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600" alt="Double Burger">
+                    <div class="food-info">
+                        <span class="food-type">Burger</span>
+                        <h3>Double Burger</h3>
+                        <p>Two beef patties with fresh toppings.</p>
+                        <div class="food-bottom"><strong>$12.99</strong><button class="add-cart" data-name="Double Burger" data-price="12.99">Add to Cart</button></div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600" alt="Special Salad">
+                    <div class="food-info">
+                        <span class="food-type">Salad</span>
+                        <h3>Atomic Salad</h3>
+                        <p>Our special mix of fresh ingredients.</p>
+                        <div class="food-bottom"><strong>$8.50</strong><button class="add-cart" data-name="Atomic Salad" data-price="8.50">Add to Cart</button></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="desserts-section" id="desserts">
+            <div class="section-title">
+                <span class="small-title">SWEET MOMENTS</span>
+                <h2>Our <span>Desserts</span></h2>
+                <p>A perfect ending to your meal.</p>
+            </div>
+
+            <div class="food-grid">
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600" alt="Chocolate Cake">
+                    <div class="food-info"><span class="food-type">Cake</span><h3>Chocolate Cake</h3><p>Rich chocolate and soft cream.</p><div class="food-bottom"><strong>$5.50</strong><button class="add-cart" data-name="Chocolate Cake" data-price="5.50">Add to Cart</button></div></div>
+                </div>
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600" alt="Strawberry Cake">
+                    <div class="food-info"><span class="food-type">Cake</span><h3>Strawberry Cake</h3><p>Fresh strawberries and soft cake.</p><div class="food-bottom"><strong>$5.99</strong><button class="add-cart" data-name="Strawberry Cake" data-price="5.99">Add to Cart</button></div></div>
+                </div>
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600" alt="Ice Cream">
+                    <div class="food-info"><span class="food-type">Ice Cream</span><h3>Vanilla Ice Cream</h3><p>Classic creamy vanilla ice cream.</p><div class="food-bottom"><strong>$3.50</strong><button class="add-cart" data-name="Vanilla Ice Cream" data-price="3.50">Add to Cart</button></div></div>
+                </div>
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600" alt="Cheesecake">
+                    <div class="food-info"><span class="food-type">Cake</span><h3>Cheesecake</h3><p>Smooth cream cheese dessert.</p><div class="food-bottom"><strong>$5.25</strong><button class="add-cart" data-name="Cheesecake" data-price="5.25">Add to Cart</button></div></div>
+                </div>
+                <div class="food-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeqY_NSUHGEZ9lrEEhs4MtxhF9ZDl3TLiBxFeHP98Hp23_fvGL5WXCK2Ya&s=10" alt="Donuts">
+                    <div class="food-info"><span class="food-type">Donut</span><h3>Sweet Donuts</h3><p>Soft donuts with sweet glaze.</p><div class="food-bottom"><strong>$3.99</strong><button class="add-cart" data-name="Sweet Donuts" data-price="3.99">Add to Cart</button></div></div>
+                </div>
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1511911063855-2bf39afa5b2e?w=600" alt="Brownie">
+                    <div class="food-info"><span class="food-type">Brownie</span><h3>Chocolate Brownie</h3><p>Soft chocolate brownie.</p><div class="food-bottom"><strong>$4.50</strong><button class="add-cart" data-name="Chocolate Brownie" data-price="4.50">Add to Cart</button></div></div>
+                </div>
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1488900128323-21503983a07e?w=600" alt="Fruit Dessert">
+                    <div class="food-info"><span class="food-type">Fruit</span><h3>Fruit Dessert</h3><p>Fresh fruit with sweet cream.</p><div class="food-bottom"><strong>$4.99</strong><button class="add-cart" data-name="Fruit Dessert" data-price="4.99">Add to Cart</button></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="drinks-section" id="drinks">
+            <div class="section-title">
+                <span class="small-title">FRESH DRINKS</span>
+                <h2>Our <span>Drinks</span></h2>
+                <p>Refresh yourself with something delicious.</p>
+            </div>
+
+            <div class="drink-grid">
+                <div class="drink-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtvlc7vqLXhbHUKv0jwjRIUkA_L6KzImk4FDSl-83JFYVFUmP1hrH_5fY&s=10" alt="Lemonade">
+                    <h3>Fresh Lemonade</h3>
+                    <p>$3.50</p>
+                    <button class="add-cart" data-name="Fresh Lemonade" data-price="3.50">Add to Cart</button>
+                </div>
+                <div class="drink-card">
+                    <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600" alt="Fruit Juice">
+                    <h3>Fruit Juice</h3>
+                    <p>$4.00</p>
+                    <button class="add-cart" data-name="Fruit Juice" data-price="4.00">Add to Cart</button>
+                </div>
+                <div class="drink-card">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600" alt="Coffee">
+                    <h3>Hot Coffee</h3>
+                    <p>$2.75</p>
+                    <button class="add-cart" data-name="Hot Coffee" data-price="2.75">Add to Cart</button>
+                </div>
+                <div class="drink-card">
+                    <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600" alt="Iced Tea">
+                    <h3>Iced Tea</h3>
+                    <p>$3.25</p>
+                    <button class="add-cart" data-name="Iced Tea" data-price="3.25">Add to Cart</button>
+                </div>
+                <div class="drink-card">
+                    <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=600" alt="Milkshake">
+                    <h3>Milkshake</h3>
+                    <p>$4.50</p>
+                    <button class="add-cart" data-name="Milkshake" data-price="4.50">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="special-section">
+            <div class="special">
+                <div>
+                    <span class="small-title">SPECIAL OFFER</span>
+                    <h2>Enjoy 20% Off Your First Order</h2>
+                    <p>Discover our menu and find your new favorite meal.</p>
+                    <a href="#foods" class="main-btn">Order Now</a>
+                </div>
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=700" alt="Special restaurant meal">
+            </div>
+        </section>
+
+        <section class="reviews-section">
+            <div class="section-title">
+                <span class="small-title">CUSTOMER REVIEWS</span>
+                <h2>What People <span>Say</span></h2>
+            </div>
+
+            <div class="review-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Amazing food and friendly service. I will definitely come back!"</p>
+                    <h3>Alex Morgan</h3>
+                    <span>Customer</span>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"The atmosphere is great and the food tastes wonderful."</p>
+                    <h3>Sarah Johnson</h3>
+                    <span>Customer</span>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"A perfect place to enjoy dinner with friends and family."</p>
+                    <h3>Daniel Smith</h3>
+                    <span>Customer</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="booking-section" id="booking">
+            <div class="section-title">
+                <span class="small-title">MAKE A RESERVATION</span>
+                <h2>Book Your <span>Table</span></h2>
+                <p>Reserve your place for a special meal.</p>
+            </div>
+
+            <form class="booking-form" id="booking-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="booking-name">Your Name</label>
+                        <input type="text" id="booking-name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-email">Email Address</label>
+                        <input type="email" id="booking-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-date">Date</label>
+                        <input type="date" id="booking-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-time">Time</label>
+                        <input type="time" id="booking-time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-guests">Guests</label>
+                        <select id="booking-guests" required>
+                            <option value="">Select guests</option>
+                            <option>1 Person</option>
+                            <option>2 People</option>
+                            <option>3 People</option>
+                            <option>4 People</option>
+                            <option>5 People</option>
+                            <option>6+ People</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-phone">Phone Number</label>
+                        <input type="tel" id="booking-phone" placeholder="Enter your phone" required>
+                    </div>
+                </div>
+                <button type="submit" class="form-btn">Reserve Now</button>
+                <p class="form-message" id="booking-message"></p>
+            </form>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="section-title">
+                <span class="small-title">GET IN TOUCH</span>
+                <h2>Contact <span>Us</span></h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Our Location</h3>
+                    <p>Sh.Namangan Davlatabot 58-narktabning yoni</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <h3>Phone Number</h3>
+                    <p>+998 94 618 57 77</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h3>Email Address</h3>
+                    <p>abdurahmonxojibayevrashid@gmail.com</p>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contact-form">
+                <input type="text" id="contact-name" placeholder="Your Name" required>
+                <input type="email" id="contact-email" placeholder="Your Email" required>
+                <textarea id="contact-text" placeholder="Write your message..." required></textarea>
+                <button type="submit" class="form-btn">Send Message</button>
+                <p class="form-message" id="contact-message"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-about">
+                <a href="#home" class="logo">Atomic<span>Restaurant</span></a>
+                <p>Fresh food, great taste and unforgettable moments. Welcome to Atomic Restaurant.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#foods">Menu</a>
+                <a href="#booking">Reservation</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Atomic Restaurant. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="srcipt.js"></script>
+</body>
+</html>
